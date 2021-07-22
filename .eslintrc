@@ -1,6 +1,15 @@
-{
-  "extends": "@antfu",
-  "ignorePatterns": [
-    ".eslintrc.js"
-  ]
-}
+module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    '@typescript-eslint',
+  ],
+  extends: [
+    '@antfu',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+  'ignorePatterns': [
+    '.eslintrc.js'
+  ]  
+};
